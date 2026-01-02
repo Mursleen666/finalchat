@@ -114,7 +114,7 @@ useEffect(() => {
         The Gooners Chatroom — made by Mursleen <br />
         Instructions: <br />
         . You have to be a gooner to use this Chatroom . <br />
-        . You should be able to give your self a ** . <br />
+        . You should be able to give your self a blowjob . <br />
         . You can't share this link with anyone for privicy purposes . 
       </h1>
 

@@ -12,7 +12,7 @@ function App() {
   const [message, setMessage] = useState("");
   const [chat, setChat] = useState([]);
   const chatEndRef = useRef(null);
-const [timer, setTimer] = useState(22); // 12 seconds countdown
+const [timer, setTimer] = useState(50); // 12 seconds countdown
 
 
 useEffect(() => {
@@ -20,13 +20,13 @@ useEffect(() => {
 
   const timer = setTimeout(() => {
     setChat([]); // clear the chat
-  }, 22000); // 12 seconds = 12000 ms
+  }, 50000); // 12 seconds = 12000 ms
 
   return () => clearTimeout(timer); // cleanup on new message or unmount
 }, [chat]);
 useEffect(() => {
   if (chat.length === 0) {
-    setTimer(22); // reset timer when chat is empty
+    setTimer(50); // reset timer when chat is empty
     return;
   }
 
@@ -68,7 +68,7 @@ useEffect(() => {
 
   const timer = setTimeout(() => {
     setChat([]);
-  }, 22000);
+  }, 50000);
 
   return () => clearTimeout(timer);
 }, [chat]);
@@ -76,7 +76,7 @@ useEffect(() => {
 useEffect(() => {
   if (timer === 0) {
     setChat([]);   // clear chat
-    setTimer(22);  // reset timer
+    setTimer(50);  // reset timer
   }
 }, [timer]);
 

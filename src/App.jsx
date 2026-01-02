@@ -1,7 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://192.168.2.11:5000");
+const socket = io("https://chatback-production-920e.up.railway.app", {
+  transports: ["websocket"],
+});
+
 
 
 function App() {
